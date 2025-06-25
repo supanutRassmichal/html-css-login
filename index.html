@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login</title>
+        <meta name="viewport" content="width=device-width, initial-sclae=1.0">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poiret+One&display=swap');
+            
+            * {
+                box-sizing: border-box;
+                font-family: "Poiret One", sans-serif;
+            }
+            
+            .container {
+                border-style: solid;
+                border-radius: 10px;
+                width: 20rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                
+            }
+
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100svh;
+                margin: 0;
+            }
+
+            input {
+                margin-top: 0.5rem;
+                border-radius: 7px;
+                border-width: 1px;
+                padding: 0.7rem;
+                width: 80%;
+                font-weight: 900;
+                color: black;
+            }
+
+            button {
+                margin-top: 0.5rem;
+                margin-bottom: 1rem;
+                width: 80%;
+                background-color: black;
+                color: aliceblue;
+                padding: 0.7rem;
+                border-radius: 7px;
+                font-size: 1rem;
+                
+            }
+
+            img {
+                padding-top: 3rem;
+            }
+
+            h1 {
+                margin: 1rem;
+            }
+
+            button:hover {
+                background-color: grey;
+                color: black;
+            }
+
+            @media screen and (max-width: 767px) {
+                .container {
+                    width: 90%;
+                }
+            }
+
+            @media screen and (min-width: 768px) and (max-width:1025px) {
+                .container {
+                    width: 35%;
+                }
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <img src="assets/login-icon.png" alt="logo" width="150px">
+            <h1>Login</h1>
+            <input type="text" id="username" name="username" placeholder="Username">
+            <input type="password" id="password" name="password" placeholder="Password">
+            <button>Login</button>
+        </div>
+    </body>
+</html>
